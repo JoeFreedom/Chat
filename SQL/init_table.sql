@@ -1,0 +1,44 @@
+CREATE TABLE Account
+(
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    login VARCHAR(50) NOT NULL,
+    pass VARCHAR(20) NOT NULL,
+    is_blocked BOOLEAN NOT NULL DEFAULT FALSE
+);
+CREATE TABLE Sex
+(
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(20) NOT NULL,
+    short_name CHAR(1) NULL
+);
+CREATE TABLE Human
+(
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(20) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    date_of_birth DATE NOT NULL,
+    sex INTEGER NOT NULL,
+    e_mail VARCHAR(50) NOT NULL,
+    tel VARCHAR(10) NOT NULL,
+    zip_code VARCHAR(5) NOT NULL,
+    id_account INTEGER NOT NULL UNIQUE,
+    CONSTRAINT Human_Sex_id_fk
+		FOREIGN KEY (sex) REFERENCES Sex (id),
+	CONSTRAINT Human_Account_id_fk
+		FOREIGN KEY (id_account) REFERENCES Account (id)
+);
+CREATE TABLE Role
+(
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(20) NOT NULL
+);
+CREATE TABLE Account_Role
+(
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id_account INTEGER NOT NULL,
+    id_role INTEGER NOT NULL,
+    CONSTRAINT Account_Role_Account_id_fk
+		FOREIGN KEY (id_account) REFERENCES Account (id),
+	CONSTRAINT Account_Role_Role_id_fk
+		FOREIGN KEY (id_role) REFERENCES Role (id)
+);
