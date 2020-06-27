@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Account_Role</OriginalElement>
+  <nodes>
+    <node x="157.99999999999997" y="-14.0">fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Account</node>
+    <node x="0.0" y="-3.0">fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Sex</node>
+    <node x="246.5" y="286.0">fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Account_Role</node>
+    <node x="395.25" y="28.0">fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Role</node>
+    <node x="59.74999999999997" y="294.0">fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Human</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Human" target="fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Account">
+      <point x="39.0" y="-139.0" />
+      <point x="175.74999999999997" y="193.0" />
+      <point x="204.49999999999997" y="193.0" />
+      <point x="-46.5" y="84.0" />
+    </edge>
+    <edge source="fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Account_Role" target="fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Role">
+      <point x="74.0" y="-73.0" />
+      <point x="465.5" y="193.0" />
+      <point x="456.25" y="193.0" />
+      <point x="0.0" y="62.0" />
+    </edge>
+    <edge source="fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Account_Role" target="fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Account">
+      <point x="-74.0" y="-73.0" />
+      <point x="317.5" y="193.0" />
+      <point x="297.5" y="193.0" />
+      <point x="46.5" y="84.0" />
+    </edge>
+    <edge source="fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Human" target="fea41b99-9aaf-4ff3-8e51-00802121370d.TABLE:host1323541_suptest2.Sex">
+      <point x="-39.0" y="-139.0" />
+      <point x="97.74999999999997" y="193.0" />
+      <point x="69.0" y="193.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="400.5" y="182.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
